@@ -1,0 +1,28 @@
+Instruções do projeto
+Pesquise sobre padrões de projeto e escolha um para apresentar e descrever o seu funcionamento. 
+Além disso, explique quais as vantagens e desvantagens comparados a outros e mostre suas referências.
+
+Padrões de projeto são soluções típicas para problemas comuns em projeto de software. 
+Padrões são como um conjunto de ferramentas para soluções de problemas comuns em design
+de software. Eles definem uma linguagem comum que ajuda sua equipe a se comunicar mais eficientemente.
+
+Um dos padrões estruturais é o "Composite" é um padrão de projeto estrutural que permite que você 
+componha objetos em estruturas de árvores e então trabalhe com essas estruturas como se elas fossem objetos individuais.
+
+Usar o padrão Composite faz sentido apenas quando o modelo central de sua aplicação pode ser representada como uma árvore.
+
+Vantagens:
+    Você pode trabalhar com estruturas de árvore complexas mais convenientemente: 
+    utilize o polimorfismo e a recursão a seu favor.
+    
+    Princípio aberto/fechado. Você pode introduzir novos tipos de elemento na aplicação sem quebrar o código existente, 
+    o que agora funciona com a árvore de objetos.
+
+Desvantagens:
+    Pode ser difícil providenciar uma interface comum para classes cuja funcionalidade difere muito. 
+    Em certos cenários, você precisaria generalizar muito a interface componente, fazendo dela uma interface de difícil compreensão.
+
+fonte: 
+https://www.devmedia.com.br/conheca-os-padroes-de-projeto/957
+https://refactoring.guru/pt-br/design-patterns/composite
+https://engsoftmoderna.info/cap6.html
