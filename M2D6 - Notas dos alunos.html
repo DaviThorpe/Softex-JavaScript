@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprovação</title>
+</head>
+<body>
+    <p>
+        Crie dois códigos de sistema de notas para uma escola.
+    </p>
+    <p>
+        O primeiro código deve ser um programa que informa se o aluno reprovou, ou não, com base nas três notas que ele adicionou ao programa.
+    </p>
+    <p>
+        Utilize, no mínimo, um operador de atribuição e um operador ternário.
+    </p>
+    <p>
+        O segundo código é um programa que o aluno deve escrever duas notas e o retorno informa a nota mínima que ele deve tirar na próxima prova para poder passar com nota sete
+    </p>
+
+    <script>
+    var programa = prompt('Digite 1 ou 2 para escolher o programa a ser utilziado')
+
+        if (programa == 1){
+            var nota1 = Number(prompt('Informe sua primeira nota: '))
+            var nota2 = Number(prompt('Informe sua segunda nota: '))
+            var nota3 = Number(prompt('Informe a terceira nota: '))
+            var media = (nota1 + nota2 + nota3) /3;
+            var aprovacao = media >= 7 ? 'aprovado':'reprovado';
+            alert(`Sua média foi ${media} e você está: ${aprovacao}`);
+        }
+            
+        else if (programa == 2){
+            var nota1 = Number(prompt('Informe sua primeira nota: '))
+            var nota2 = Number(prompt('Informe sua segunda nota: '))
+            var media = Number(prompt('Digite a média minima para passar: '))
+            var nota3 = (3 * media) - nota1 - nota2;
+            alert(`Você precisa tirar ${nota3} para ser aprovado`)
+        }
+
+        else{
+            alert('Meu consagrado digita só 1 ou 2 aí')
+        }
+            
+    </script>
+</body>
+</html>
