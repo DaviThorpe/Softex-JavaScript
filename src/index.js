@@ -11,5 +11,7 @@ Por exemplo, o código de rotas está em um arquivo diferente do código de cone
 var express = require('express');
 var app = express();
 var rota = require('./rota')
+// Foi utilizado a extensão Router para "puxar"
+// as informações de outro arquivo
 app.use('/', rota)
 app.listen(3333)
