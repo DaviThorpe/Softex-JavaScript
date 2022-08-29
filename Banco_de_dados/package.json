@@ -2,7 +2,7 @@
   "name": "banco_de_dados",
   "version": "1.0.0",
   "description": "",
-  "main": "banco_de_dados.js",
+  "main": "DB.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
